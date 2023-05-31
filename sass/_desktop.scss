@@ -1,0 +1,60 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 80%;
+    margin: auto;
+    padding: 1.5rem 3rem;
+    background-image: url(https://wallpapercave.com/wp/wp3248705.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .formularioAlta {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        label {
+            padding-left: 1rem;
+            padding-top: 1rem;
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+        input {
+            border-radius: 1rem;
+            width: 20rem;
+        }
+        button {
+            border-radius: 1rem;
+            width: 15rem;
+            padding: 1rem;
+            background-color: gray;
+            color: white;
+            border: 0pc;
+        }
+        p {
+            text-align: center;
+            padding-top: 1.5rem;
+            padding-right: 4rem;
+        }
+    }
+    .buscar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .productoTabla {
+        th {
+            border: 1px solid black;
+            width: 12.5%;
+            text-align: center;
+        }
+        td {
+            border: 1px solid black;
+            padding: 0.5rem;
+            text-align: center;
+            button {
+                padding: 0.5rem;
+                margin: 0.5rem;
+                border: 0;
+                background-color: gray;
+                border-radius: 1rem;
+                color: white;
+            }
+        }
+    }
+}

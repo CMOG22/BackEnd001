@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - Alta de productos</title>
+        <!--<link rel="icon" type="image/x-icon" href="./img/favicon.ico"-->
+        <!--Boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <!--sass se tiene que likear el css que se carga despues de whatch sass-->
+        <link rel="stylesheet" href="./sass/main.css">
+        <!--navbar w3schools-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="description" content="desarrollador frot-end, web developer">
+        <meta name="keywords" content="web developer, html, css, html5, css3, sass, scss, cmog, cesar olvera">
+        <meta name="author" content="César Olvera">
+        <!--Toastify-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <div>
+                <h1>Alta de articulos</h1>
+                <form action="" id="formulario" class="formularioAlta">
+                    <section>
+                        <label for="">*Nombre de producto:</label><br>
+                        <input type="text" id="title" name="title">
+                    </section>
+                    <section>
+                        <label for="">*Descripción:</label><br>
+                        <input type="text" id="description" name="description">
+                    </section>
+                    <section>
+                        <label for="">*Precio:</label><br>
+                        <input type="number" name="price" id="price">
+                    </section>
+                    <section>
+                        <label for="">*URL de Imagen:</label><br>
+                        <input type="url" name="thumbnail" id="thumbnail">
+                    </section>
+                    <section>
+                        <label for="">*Codigo:</label><br>
+                        <input type="text" name="code" id="code">
+                    </section>
+                    <section>
+                        <label for="">*Stock:</label><br>
+                        <input type="number" name="stock" id="stock">
+                    </section>
+                    <section>
+                        <br>
+                        <button type="submit">Agregar Producto</button>
+                    </section>
+                    <section>
+                        <p>*Campos obligatorios</p>
+                    </section>
+                </form>
+            </div>
+            <br>
+            <div>
+                <div>
+                    <section>
+                        <h2>Articulos Agregados</h2>
+                    </section>
+                    <section>
+
+                    </section>
+                </div>
+                <div class="buscar">
+                    <section>
+                        <label for="">Buscar por Id:</label>
+                        <input type="text" id="buscar" onkeyup="buscar()" class="search"><br>
+                    </section>
+                    <section>
+                        <label for="">Buscar por Código:</label>
+                    <input type="text" id="buscarCodigo" onkeyup="buscarPorCodigo()" class="search">
+                    </section>
+                </div>
+                <br>
+                <table class="productoTabla">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre del producto</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                            <th>Imagen</th>
+                            <th>Codigo</th>
+                            <th>Stock</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-datos"></tbody>
+                </table>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="./js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    </body>
+</html>
